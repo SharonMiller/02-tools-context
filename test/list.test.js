@@ -7,9 +7,37 @@ describe('my list', () => {
     expect(actual.length).toBe(expectedValue);
   });
 
-    test('should return list array with updated values', () => {
-      let actual = list.push('friends', 5);
-      let expectedValue = ['friends', 5];
-      expect(actual).toBe(expectedValue);
+    test('push should return correct length', () => {
+      let list = new List;
+      let actual = list.push('friends');
+      let expectedValue = list.length;
+      console.log(list);
+      console.log(actual);
+      expect(actual).toEqual(expectedValue);
     });
+    
+    test('push should return actual list', () => {
+      let list = new List;
+      list.push('hi');
+      list.push('happy');
+      let actual = list;
+      let expectedValue = { 0: 'hi', 1: 'happy', length: 2 };
+      console.log(list);
+      console.log(actual);
+      expect(actual).toEqual(expectedValue);
+    });
+
+    test('pop should return actual current list', () => {
+      let list = new List;
+      list.push('hi');
+      list.push('happy');
+      list.pop();
+      let actual = list;
+      let expectedValue = { 0: 'hi', length: 1 };
+      console.log(list);
+      console.log(actual);
+      expect(actual).toEqual(expectedValue);
+    });
+
+
 });
