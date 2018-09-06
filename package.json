@@ -1,0 +1,23 @@
+{
+  "name": "02-tools-context",
+  "version": "1.0.0",
+  "description": "pure methods on List prototype",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest **/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SharonMiller/02-tools-context.git"
+  },
+  "author": "Sharon Miller <sharonmillerdev@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SharonMiller/02-tools-context/issues"
+  },
+  "homepage": "https://github.com/SharonMiller/02-tools-context#readme",
+  "dependencies": {
+    "eslint": "^5.5.0",
+    "jest": "^23.5.0"
+  }
+}
