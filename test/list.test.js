@@ -6,4 +6,10 @@ describe('my list', () => {
     let expectedValue = 0;
     expect(actual.length).toBe(expectedValue);
   });
+
+    test('should return list array with updated values', () => {
+      let actual = list.push('friends', 5);
+      let expectedValue = ['friends', 5];
+      expect(actual).toBe(expectedValue);
+    });
 });
